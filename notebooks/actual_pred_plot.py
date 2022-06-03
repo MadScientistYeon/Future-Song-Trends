@@ -10,5 +10,6 @@ def actual_pred_plot(actual, preds):
     m = MeanSquaredError()
     m.update_state(np.array(actual_pred['Actual']), np.array(actual_pred['Predict']))
     
+    
     return m.result().numpy(), actual_pred
     
